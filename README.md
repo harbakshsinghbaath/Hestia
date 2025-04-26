@@ -1,7 +1,7 @@
 
 ---
 
-# 🔥 ForestFire AI: Predict, Prevent, Protect
+# 🔥 Hestia: Predict, Prevent, Protect
 
 ## Overview
 
@@ -71,8 +71,8 @@ This system is designed to help authorities, emergency services, and communities
 
 | Team Member | Responsibilities |
 |:------------|:------------------|
-| **You** | Backend architecture, fire spread prediction logic, API endpoints |
-| **Harbaksh** | Frontend UI/UX (Dashboard + Maps integration) |
+| **Saurya** | Backend architecture, fire spread prediction logic, API endpoints |
+| **Harbaksh** | Frontend UI/UX (Maps integration) + Model Development |
 | **Manan** | Data modeling for fire spread, building synthetic datasets |
 | **Avraj** | Research on fire patterns, testing scenarios, stress testing |
 | **Kyna** | Business pitch, product strategy, use case validation |
