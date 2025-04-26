@@ -1,7 +1,7 @@
 
 ---
 
-# 🔥 ForestFire AI: Predict, Prevent, Protect
+# 🔥 Hestia: Predict, Prevent, Protect
 
 ## Overview
 
