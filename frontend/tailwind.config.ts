@@ -1,13 +1,13 @@
 
-import type { Config } from "tailwindcss";
+import { type Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
   prefix: "",
   theme: {
@@ -20,43 +20,52 @@ export default {
     },
     extend: {
       colors: {
-        background: {
-          DEFAULT: "#202020",
-          secondary: "#333533", // Add secondary background color
-        },
-        foreground: "#d6d6d6",
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        "fire-low": "#4CAF50",
+        "fire-medium": "#FFC107", 
+        "fire-high": "#FF5722",
+        "fire-extreme": "#D32F2F",
         primary: {
-          DEFAULT: "#f48c06",
-          light: "#f48c06",
-        },
-        border: {
-          DEFAULT: "#333533",
-        },
-        muted: {
-          DEFAULT: "#333533",
-          foreground: "#d6d6d6",
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "#333533", // Explicitly define secondary color
-          foreground: "#d6d6d6",
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "#f48c06",
-          foreground: "#202020",
-        },
-        card: {
-          DEFAULT: "#333533",
-          foreground: "#d6d6d6",
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
-          DEFAULT: "#333533",
-          foreground: "#d6d6d6",
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
         },
       },
       borderRadius: {
-        lg: "0.75rem",
-        md: "calc(0.75rem - 2px)",
-        sm: "calc(0.75rem - 4px)",
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      boxShadow: {
+        "glass-card": "0 4px 30px rgba(0, 0, 0, 0.1)",
+        "glass-input": "inset 0 2px 4px rgba(0, 0, 0, 0.06)",
       },
       keyframes: {
         "accordion-down": {
@@ -67,22 +76,12 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "subtle-pulse": {
-          "0%, 100%": { opacity: "1" },
-          "50%": { opacity: "0.8" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "subtle-pulse": "subtle-pulse 2s ease-in-out infinite",
-      },
-      boxShadow: {
-        "glass-input": "0 4px 6px rgba(0, 0, 0, 0.1)",
-        "glass-card": "0 8px 32px rgba(0, 0, 0, 0.2)",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-

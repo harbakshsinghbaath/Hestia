@@ -17,55 +17,7 @@
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
   </head>
 
-
   <body>
-    <body>
-      <h1>🔥 Hestia Fire Prediction 🔥</h1>
-      
-      <form id="predictForm">
-        <input type="text" id="city" placeholder="Enter City Name" required><br><br>
-        <input type="number" id="ffmc" placeholder="FFMC Value" required><br><br>
-        <input type="number" id="dmc" placeholder="DMC Value" required><br><br>
-        <input type="number" id="dc" placeholder="DC Value" required><br><br>
-        <input type="number" id="isi" placeholder="ISI Value" required><br><br>
-        <button type="submit">Predict</button>
-      </form>
-    
-      <h2 id="result"></h2>
-    
-      <script>
-        const form = document.getElementById('predictForm');
-        const resultDiv = document.getElementById('result');
-    
-        form.addEventListener('submit', async (e) => {
-          e.preventDefault();
-          
-          const city = document.getElementById('city').value;
-          const ffmc = parseFloat(document.getElementById('ffmc').value);
-          const dmc = parseFloat(document.getElementById('dmc').value);
-          const dc = parseFloat(document.getElementById('dc').value);
-          const isi = parseFloat(document.getElementById('isi').value);
-    
-          const response = await fetch('http://127.0.0.1:5000/predict', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ city, ffmc, dmc, dc, isi })
-          });
-    
-          const data = await response.json();
-          
-          resultDiv.innerHTML = `
-            <strong>Fire Size:</strong> ${data.Fire_Size} <br>
-            <strong>Spread Time:</strong> ${data.Spread_Time_Hours.toFixed(2)} hours (${data.Spread_Time_Minutes.toFixed(1)} minutes) <br>
-            <strong>Spread Speed:</strong> ${data.Speed} <br>
-            <strong>Location:</strong> (${data.Location.Latitude}, ${data.Location.Longitude})
-          `;
-        });
-      </script>
-    </body>
-    
     <div id="root"></div>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>

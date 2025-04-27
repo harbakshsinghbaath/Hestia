@@ -40,7 +40,10 @@ export interface WeatherData {
   locationName: string;
   latitude: number;
   longitude: number;
-  temperature: number;  // Celsius
-  humidity: number;     // Percentage
-  windSpeed: number;    // km/h
+  temperature: number;   // Celsius
+  humidity: number;      // Percentage
+  windSpeed: number;     // km/h
+  cloudCover: number;    // Percentage
+  precipitation: number; // mm
+  windDirection: number; // Degrees from North
 }

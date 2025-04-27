@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <NavLink to="/" className="flex items-center space-x-2">
-            <Flame className="h-6 w-6 text-primary" />
+            <img className="h-6 w-6 text-primary" src="Hestia.png"/>
             <span className="text-xl font-bold">Hestia</span>
           </NavLink>
           <div className="hidden md:block">
