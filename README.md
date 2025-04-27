@@ -5,10 +5,15 @@
 
 ## Overview
 
-**ForestFire AI** is an intelligent forest fire prevention and management system that predicts the behavior of forest fires using synthetic or historical data.  
+Hestia is an intelligent forest fire prevention and management system that predicts the behavior of forest fires using synthetic or historical data.  
 It provides real-time risk heatmaps, predicts the direction and speed of fire spread, and generates dynamic evacuation plans using Google Maps overlays.
 
 This system is designed to help authorities, emergency services, and communities **act faster, smarter, and safer** during wildfire events.
+
+<img width="959" alt="Screenshot 2025-04-27 162505" src="https://github.com/user-attachments/assets/9b48da8a-8b1d-49cc-adea-d5042630e9ef" />
+<img width="959" alt="Screenshot 2025-04-27 162550" src="https://github.com/user-attachments/assets/dab2c455-bf17-4c15-8e85-6f6f0d0c7a7a" />
+<img width="959" alt="Screenshot 2025-04-27 162630" src="https://github.com/user-attachments/assets/8bab0a64-5ca3-46e5-8703-15d6a6cb03bf" />
+<img width="955" alt="Screenshot 2025-04-27 162715" src="https://github.com/user-attachments/assets/e2c30a7e-78d7-4fc3-b16b-73fdd27a6f74" />
 
 ---
 
@@ -71,10 +76,10 @@ This system is designed to help authorities, emergency services, and communities
 
 | Team Member | Responsibilities |
 |:------------|:------------------|
-| **Saurya** | Backend architecture, fire spread prediction logic, API endpoints |
-| **Harbaksh** | Frontend UI/UX (Maps integration) + Model Development |
-| **Manan** | Data modeling for fire spread, building synthetic datasets |
-| **Avraj** | Research on fire patterns, testing scenarios, stress testing |
+| **Harbaksh** | Backend architecture, fire spread prediction logic, API endpoints |
+| **Saurya** | Frontend UI/UX (Maps integration) + Backend integration |
+| **Manan** | Data modeling for fire spread, building synthetic datasets, Arduino IOT model |
+| **Avraj** | Documentation, research on fire patterns, testing scenarios, stress testing |
 | **Kyna** | Business pitch, product strategy, use case validation |
 
 ---
