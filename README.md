@@ -65,7 +65,7 @@ This system is designed to help authorities, emergency services, and communities
 | Area | Tools |
 |:-----|:------|
 | Frontend | React.js, Google Maps API, TailwindCSS |
-| Backend | Node.js (Express.js) or Flask (Python) |
+| Backend | Node.js (Express.js) |
 | AI/ML | Python (scikit-learn / simple decision models) |
 | Visualization | Google Maps overlays, dynamic heatmaps |
 | Data | Synthetic wildfire datasets, manually created data samples |
